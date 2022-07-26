@@ -1,9 +1,9 @@
 const Header = (props) => {
     return (
-        <h1  className={props.className}>
+        <h1 className={props.className}>
             {props.title}
-        </h1>    
+        </h1>
     );
-    }
+}
 
-    export default Header;
+export default Header;

@@ -82,6 +82,42 @@
   background-color: #456268;
 }
 
+.item-counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  height: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.inner-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.count-number, .count-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.decrementBtn, .incrementBtn {
+  background-color: #79A3B1;
+  height: 25px;
+  width: 10%;
+  border-radius: 5px;
+  color: #FCF8EC;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
 .Footer {
   background-color: #FCF8EC;
 text-align: center;
