@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import ProductCard from './components/ProductCard'
-import ItemCounter from './components/itemCounter'
+import ItemCounter from './components/ItemCounter'
+import ItemListContainer from './components/ItemListContainer'
 import Header from './components/Header'
 import Footer from './components/Footer'
+
 
 function App() {
 
@@ -21,7 +22,7 @@ const decrementFn = () => {
 const incrementFn = () => {
     setCount(count + 1);
     if (count >= 6) {
-        alert("No se pueden agregar mas productos debido al stock");
+        alert("No se pueden agregar mas productos debido a la falta de stock");
         setCount(6);
     }
 }
@@ -32,45 +33,17 @@ const incrementFn = () => {
       <Navbar />
       <Header
       className="main-title"
-      title="Bienvenidos a 一流のテクノロジー!" 
+      title="Welcome to the market" 
       />
       <div className="Container">
 
-        <ProductCard
-          image="../../assets/headsets/g432-headset.png"
-          name="Logitech G 432"
-          price="$1500" />
-
-        <ProductCard
-          image="../../assets/headsets/g432-headset.png"
-          name="Logitech G 432"
-          price="$1500" />
-
-        <ProductCard
-          image="../../assets/headsets/g432-headset.png"
-          name="Logitech G 432"
-          price="$1500" />
-
-        <ProductCard
-          image="../../assets/headsets/g432-headset.png"
-          name="Logitech G 432"
-          price="$1500" />
-
-        <ProductCard
-          image="../../assets/headsets/g432-headset.png"
-          name="Logitech G 432"
-          price="$1500" />
-
-        <ProductCard
-          image="../../assets/headsets/g432-headset.png"
-          name="Logitech G 432"
-          price="$1500" />
-
-        <ItemCounter
+      <ItemListContainer />
+      <ItemCounter
         decrement={decrementFn} 
         count={count}  
         text="Cantidad de productos"
-        increment={incrementFn} />      
+        increment={incrementFn} />  
+
       </div>
     <Footer />
     </div>

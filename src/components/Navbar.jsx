@@ -3,7 +3,7 @@ import {FaShoppingCart} from 'react-icons/fa';
 const Navbar = () => {
     return (
         <nav className="nav">
-            <a href="/" className="nav-title">Wuffen</a>
+            <a href="/" className="nav-title">黒</a>
             <ul className="nav-list">
             <li className="nav-item">
                     <a href="/" className="nav-link">Home</a>
